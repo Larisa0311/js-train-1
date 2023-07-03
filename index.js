@@ -321,7 +321,7 @@ function compose(func1, func2) {
 }
 
 // Створюємо змінну createCompose якій присвоємо результат виконання функції compose з аргументами increment та double
-const createCompose = compose(increment(), double());
+let createCompose = compose(increment, double);
 console.log("Завдання 17 ====================================");
 // Розкоментуйте після виконаня завдання
 console.log("createCompose(5)", createCompose(5)); // Виведе: 12 (5+1=6, 6*2=12)
